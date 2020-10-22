@@ -5,6 +5,7 @@ STATUS_MODERATED = 'moderated'
 STATUS_CHOICES = ((STATUS_NEW, 'Новая'), (STATUS_MODERATED, 'Модерированная'))
 DEFAULT_STATUS = STATUS_NEW
 
+
 class Quote(models.Model):
     text = models.TextField(max_length=2000, verbose_name='Текст')
     author = models.CharField(max_length=100, verbose_name='Автор')
@@ -21,6 +22,7 @@ class Quote(models.Model):
         verbose_name = 'Цитата'
         verbose_name_plural = 'Цитаты'
         ordering = ('-created_at',)
+
 
 class Vote(models.Model):
     session_key = models.CharField(max_length=40, verbose_name='Ключ сессии')
