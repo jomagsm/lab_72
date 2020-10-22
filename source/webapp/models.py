@@ -21,3 +21,16 @@ class Quote(models.Model):
         verbose_name = 'Цитата'
         verbose_name_plural = 'Цитаты'
         ordering = ('-created_at',)
+
+class Vote(models.Model):
+    session_key = models.CharField(max_length=40, verbose_name='Ключ сессии')
+    quote = models.ForeignKey('webapp.Quote', related_name='votes', verbose_name='Цитата', on_delete=models.CASCADE)
+    rating = models.IntegerField(choices=((1, 'up'), (-1, 'down')),verbose_name='Рейтинг',)
+
+    def __str__(self):
+        return f'{self.quote}: {self.rating}'
+
+    class Meta:
+        verbose_name = 'Рейтинг'
+        verbose_name_plural = 'Рейтинги'
+        ordering = ('quote', 'rating')
