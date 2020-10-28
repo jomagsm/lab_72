@@ -132,6 +132,7 @@ async function getDetail(id){
                         <p class="btn btn-primary" id="${data.id}" data-target="+">+</p>
                         <p class="btn btn-primary" id="${data.id}" data-target="-">-</p></p>
                         <p class="card-text"> Статус: ${data.status_display}</p>
+                        <p class="card-text"> Дата: ${data.created_at}</p>
 <!--                        <p class="btn btn-primary" id="${data.id}"> Просмотр</p>-->
                         <a href="http://localhost:8000/" id="back_home" class="btn btn-secondary">Назад</a>
                         </div>
