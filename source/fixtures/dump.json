@@ -1,0 +1,308 @@
+[
+{
+  "model": "webapp.quote",
+  "pk": 1,
+  "fields": {
+    "text": "Text",
+    "author": "Test",
+    "email": "tes@fg.df",
+    "rating": -1,
+    "status": "moderated",
+    "created_at": "2020-10-22T14:57:29.406Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 2,
+  "fields": {
+    "text": "Tedssd2",
+    "author": "fdgdfggsdf",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-22T15:02:43.068Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 3,
+  "fields": {
+    "text": "Tesdkljsdf",
+    "author": "dfgdfg",
+    "email": "jomagsm@gmail.com",
+    "rating": 12,
+    "status": "New",
+    "created_at": "2020-10-23T07:46:19.754Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 4,
+  "fields": {
+    "text": "dsffdfdssdffdsdfs",
+    "author": "joma_gsm",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T16:26:47.305Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 5,
+  "fields": {
+    "text": "sdfsdfsdsfd",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T16:30:54.272Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 6,
+  "fields": {
+    "text": "sdfsdfdfssdfgdfgw",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T16:33:30.620Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 7,
+  "fields": {
+    "text": "sdffsdsdsdqweqwe12312213",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:32:06.697Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 8,
+  "fields": {
+    "text": "dsfdsfweewrr",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:43:36.992Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 9,
+  "fields": {
+    "text": "ddsfdsfd",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:48:36.120Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 10,
+  "fields": {
+    "text": "ddsfdsfd3343423234",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:50:09.259Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 11,
+  "fields": {
+    "text": "123443232",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:51:18.343Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 12,
+  "fields": {
+    "text": "ssdfsd",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:54:16.812Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 13,
+  "fields": {
+    "text": "rereret",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-26T17:57:02.537Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 14,
+  "fields": {
+    "text": "sdfdsf",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T06:59:56.211Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 15,
+  "fields": {
+    "text": "sdfdsf",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T07:00:20.587Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 16,
+  "fields": {
+    "text": "dsfsdfdsf",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T07:00:43.669Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 17,
+  "fields": {
+    "text": "dsfsdfdsf",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T07:00:52.338Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 18,
+  "fields": {
+    "text": "dsfsfdfdsdfs",
+    "author": "joma_gsm",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T12:06:45.418Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 19,
+  "fields": {
+    "text": "gdfgfdgdfgfd",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T12:19:11.146Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 20,
+  "fields": {
+    "text": "gdfgdfgdf",
+    "author": "Zhoomart",
+    "email": "joma_gsm@mail.ru",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T12:39:10.705Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 21,
+  "fields": {
+    "text": "dsffsddfs",
+    "author": "joma_gsm",
+    "email": "jomagsm@gmail.com",
+    "rating": 0,
+    "status": "New",
+    "created_at": "2020-10-28T12:40:11.616Z"
+  }
+},
+{
+  "model": "webapp.vote",
+  "pk": 5,
+  "fields": {
+    "session_key": "rroebcm7l8t470dj8c8exxtnjgjai8xz",
+    "quote": 1,
+    "rating": -1
+  }
+},
+{
+  "model": "webapp.vote",
+  "pk": 6,
+  "fields": {
+    "session_key": "rroebcm7l8t470dj8c8exxtnjgjai8xz",
+    "quote": 2,
+    "rating": -1
+  }
+},
+{
+  "model": "webapp.vote",
+  "pk": 7,
+  "fields": {
+    "session_key": "rroebcm7l8t470dj8c8exxtnjgjai8xz",
+    "quote": 3,
+    "rating": -1
+  }
+},
+{
+  "model": "webapp.vote",
+  "pk": 8,
+  "fields": {
+    "session_key": "rroebcm7l8t470dj8c8exxtnjgjai8xz",
+    "quote": 17,
+    "rating": -1
+  }
+},
+{
+  "model": "webapp.vote",
+  "pk": 9,
+  "fields": {
+    "session_key": "a5dk9eypzm286nis68x0k0ei22wbhfrk",
+    "quote": 19,
+    "rating": 1
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "birth_date": null,
+    "avatar": ""
+  }
+}
+]
