@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework.response import Response
 from rest_framework.serializers import ModelSerializer, CharField
 
 from webapp.models import Quote, Vote
@@ -16,6 +17,18 @@ class QuoteSerializer(ModelSerializer):
 class QuoteCreteSerializer(QuoteSerializer):
     class Meta(QuoteSerializer.Meta):
         read_only_fields = ['rating', 'status']
+
+    # def create(self, validated_data):
+    #     print(validated_data['text'])
+    #     slr = Quote(text=validated_data['text'], author=validated_data['author'],
+    #                 email=validated_data['email'])
+    #     print(type(slr))
+    #     if slr.is_valid():
+    #         print(slr.data)
+    #         quote = slr.save()
+    #         return Response(quote.data)
+    #     else:
+    #         return Response(slr.errors, status=400)
 
 
 class QuoteUpdateSerializer(QuoteSerializer):

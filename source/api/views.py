@@ -1,4 +1,6 @@
 from django.shortcuts import get_object_or_404
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import ensure_csrf_cookie
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -11,10 +13,6 @@ class QuoteViewSet(ModelViewSet):
     permission_classes = [QuotePermissions]
 
     def get_queryset(self):
-        # if not self.request.session.session_key:
-        #     self.request.session.save()
-        # session = self.request.session
-        # print(session.session_key)
         if self.request.method == 'GET' and not self.request.user.has_perm('webapp.quote_view'):
             return Quote.get_moderated()
         return Quote.objects.all()
@@ -51,7 +49,7 @@ class AddRatingView(APIView):
             quote.rating = quote.rating + 1
         quote.save()
         slr = QuoteSerializer(quote)
-        return Response({"rating":quote.rating})
+        return Response({"rating": quote.rating})
 
 
 class DeleteRatingView(APIView):
@@ -61,17 +59,30 @@ class DeleteRatingView(APIView):
         session = self.request.session.session_key
         quote = get_object_or_404(Quote.objects.all(), pk=pk)
         vote = Vote.objects.all().filter(session_key=session, quote_id=pk)
+        print(vote)
         if len(vote) > 0:
             if vote[0].rating == 1:
                 vote[0].rating = -1
                 quote.rating = quote.rating - 1
                 vote[0].save()
         else:
+            print('dffddfdfdfdfdfsdfsdfdsfds')
             vote = Vote.objects.create(session_key=session, quote_id=pk, rating=-1)
+            print(vote.rating)
             quote.rating = quote.rating - 1
         quote.save()
         slr = QuoteSerializer(quote)
         return Response({"rating":quote.rating})
+
+# class RemoveFavoritesView(APIView):
+#     permission_classes = [IsAuthenticated]
+#
+#     @method_decorator(ensure_csrf_cookie)
+#     def delete(self, request, pk=None):
+#         favorites = get_object_or_404(Favorites, photo_id=pk)
+#         favorites.delete()
+#         return Response({'pk': pk})
+
 
         # print(session)
         # print(self.request)
